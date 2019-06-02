@@ -1,2 +1,3 @@
-	name: Ying Tuo, Horrible Cop
-	markdown: kramdown
+name: Ying Tuo, Horrible Cop
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
