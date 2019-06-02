@@ -3,6 +3,20 @@ layout: default
 title: Ying Tuo, Horrible Cop
 ---
 <div class="blurb">
-	<h1>Hi there, I'm Ying Tuo!</h1>
-	<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
+	<h1>Hello ,I'm Ying Tuo</h1>
+	<!-- <div class="jumbotron"> -->
+		<div class="row marketing">
+			<div class="col-sm-4">
+			<img  class="img-circle avatar" alt="yingtuo" src="img/tuotuo.png">
+			</div>
+		</div>
+		<!-- </div> -->
+	<p>I am a bachelor from <a href="https://www.bupt.edu.cn/">BUPT</a>. Nickname is <em> Lovely Tuo</em>. Nice to meet you. <a href="/about">Read more about my life...</a></p>
 </div><!-- /.blurb -->
+<ul class="posts">
+
+	{% for post in site.posts %}
+	  <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
+
